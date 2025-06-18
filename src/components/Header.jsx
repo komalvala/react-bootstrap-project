@@ -18,10 +18,10 @@ const Header = () => {
         zIndex: 999,
       }}
     >
-      <Container fluid className="px-5">
+      <Container fluid className="px-5 py-2">
         {/* Logo */}
         <Navbar.Brand href="/">
-          <img src={logo} alt="Logo" style={{ height: "59px", width: "174px" }} />
+          <img src={logo} alt="Logo" style={{ height: "60px", width: "174px"}} />
         </Navbar.Brand>
 
         {/* Mobile Toggle */}
@@ -30,7 +30,7 @@ const Header = () => {
         {/* Nav + Icons */}
         <Navbar.Collapse id="main-navbar">
           {/* Center Nav Links */}
-          <Nav className="mx-auto  text-capitalize menu-items">
+          <Nav className="mx-auto  text-capitalize menu-items fs-5">
             {/* HOME with dropdown */}
             <NavDropdown
               title={
@@ -82,10 +82,10 @@ const Header = () => {
 
           {/* Right Side Icons */}
           <div className="d-flex align-items-center gap-4 ms-auto">
-            <BsSearch size={18} className="icon-style" />
-            <BsPerson size={18} className="icon-style" />
-            <BsHeart size={18} className="icon-style" />
-            <BsBag size={18} className="icon-style" />
+            <BsSearch size={20} className="icon-style" />
+            <BsPerson size={20} className="icon-style" />
+            <BsHeart size={20} className="icon-style" />
+            <BsBag size={20} className="icon-style" />
           </div>
         </Navbar.Collapse>
       </Container>
