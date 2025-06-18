@@ -8,13 +8,13 @@ const ContactFormSection = () => {
       <Row>
         {/* Left Column - Form */}
         <Col lg={8} style={{ paddingRight: '40px' }}>
-          <h2 style={{ fontWeight: 500, fontSize: '30px', marginBottom: '10px' }}>Get In Touch</h2>
+          <h2 style={{ fontWeight: 500, fontSize: '35px', marginBottom: '10px' }}>Get In Touch</h2>
           <p
             style={{
               marginBottom: '30px',
               color: '#5c5c5c',
               fontFamily: 'DM Sans, sans-serif',
-              fontSize: '14px',
+              fontSize: '16px',
             }}
           >
             Your email address will not be published. Required fields are marked{' '}
@@ -31,7 +31,7 @@ const ContactFormSection = () => {
                   borderRadius: 0,
                   border: '1px solid #ddd',
                   fontFamily: 'DM Sans, sans-serif',
-                  fontSize: '14px',
+                  fontSize: '16px',
                 }}
               />
             </Form.Group>
@@ -45,7 +45,7 @@ const ContactFormSection = () => {
                   borderRadius: 0,
                   border: '1px solid #ddd',
                   fontFamily: 'DM Sans, sans-serif',
-                  fontSize: '14px',
+                  fontSize: '16px',
                 }}
               />
             </Form.Group>
@@ -60,7 +60,7 @@ const ContactFormSection = () => {
                   borderRadius: 0,
                   border: '1px solid #ddd',
                   fontFamily: 'DM Sans, sans-serif',
-                  fontSize: '14px',
+                  fontSize: '16px',
                 }}
               />
             </Form.Group>
@@ -73,6 +73,8 @@ const ContactFormSection = () => {
                 borderRadius: '35px',
                 padding: '12px 30px',
                 fontWeight: 500,
+                fontSize: '18px',
+                color: '#fff',
                 fontFamily: 'DM Sans, sans-serif',
               }}
             >
@@ -124,14 +126,16 @@ const ContactFormSection = () => {
                 {item.icon}
               </div>
               <div>
-                <h5 style={{ fontWeight: 500 }}>{item.title}</h5>
+                <h5 style={{ fontWeight: 500 ,fontSize: "25px"}}>{item.title}</h5>
                 {item.lines.map((line, i) => (
                   <p
                     key={i}
                     style={{
                       margin: 0,
                       fontFamily: 'DM Sans, sans-serif',
-                      fontSize: '13px',
+                      fontSize: '17px',
+                      color: '#555555',
+                      latterSpacing: '0.5px',
                     }}
                   >
                     {line}

@@ -10,14 +10,14 @@ const Footer = () => {
     <footer style={{ fontFamily: "sans-serif", marginTop: "60px" }}>
       <Container fluid="lg">
         {/* Top Icons Row */}
-        <Row className="align-items-center border-bottom pb-3 mb-4">
+        <Row className="align-items-center border-bottom pb-5 mb-4">
           <Col xs={12} md={4}>
             <h2
               style={{
                 fontWeight: "500",
                 fontFamily:
                   '"Kalnia", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif',
-                fontSize: "28px",
+                fontSize: "30px",
               }}
             >
               Need Lebagol Now?
@@ -29,7 +29,7 @@ const Footer = () => {
               {/* Local Delivery */}
               <div>
                 <img src={DeliveryIcon} alt="Local Delivery" style={{ width: "50px" }} />
-                <p className="mt-2 fw-medium" style={{ fontSize: "12px" }}>LOCAL DELIVERY</p>
+                <p className="mt-2 fw-medium" style={{ fontSize: "14px",letterSpacing:'1px' }}>LOCAL DELIVERY</p>
               </div>
 
               <img src={DecorLine} alt="divider" style={{ height: "60px" }} className="d-none d-md-block" />
@@ -37,7 +37,7 @@ const Footer = () => {
               {/* Scoop Shops */}
               <div>
                 <img src={IcecreamIcon} alt="Scoop Shops" style={{ width: "50px" }} />
-                <p className="mt-2 fw-medium" style={{ fontSize: "12px" }}>SCOOP SHOPS</p>
+                <p className="mt-2 fw-medium" style={{ fontSize: "14px",letterSpacing:'1px' }}>SCOOP SHOPS</p>
               </div>
 
               <img src={DecorLine} alt="divider" style={{ height: "60px" }} className="d-none d-md-block" />
@@ -45,18 +45,18 @@ const Footer = () => {
               {/* Grocery Locator */}
               <div>
                 <img src={StoreIcon} alt="Grocery Locator" style={{ width: "50px" }} />
-                <p className="mt-2 fw-medium" style={{ fontSize: "12px" }}>GROCERY LOCATOR</p>
+                <p className="mt-2 fw-medium" style={{ fontSize: "14px" ,letterSpacing:'1px'}}>GROCERY LOCATOR</p>
               </div>
             </div>
           </Col>
         </Row>
 
         {/* Main Footer Grid */}
-        <Row className="text-start pb-5">
+        <Row className="text-start pb-5 mt-5">
           {/* Logo & Contact */}
           <Col xs={12} sm={6} md={4} className="mb-4 mb-md-0">
-            <img src={logo} alt="Logo" style={{ height: "50px", width: "160px", marginBottom: "25px" }} />
-            <p style={{ fontSize: "14px" }}>
+            <img src={logo} alt="Logo" style={{ height: "60px", width: "165px", marginBottom: "25px" }} />
+            <p style={{ fontSize: "16px" ,color: '#5c5c5c'}}>
               5609 E Sprague Ave, Spokane
               <br />
               Valley, WA 99212, USA
@@ -64,7 +64,7 @@ const Footer = () => {
             <p style={{ fontWeight: "700", fontSize: "18px", marginTop: "30px", marginBottom: "0px" }}>
               + 1834 123 456 789
             </p>
-            <p style={{ fontSize: "14px" }}>support1@example.com</p>
+            <p style={{ fontSize: "16px" ,color: '#5c5c5c'}}>support1@example.com</p>
           </Col>
 
           {/* Info Links */}
@@ -75,18 +75,18 @@ const Footer = () => {
             { title: "Categories", items: ["Gelato", "Kulfi", "Sherbet", "Sorbet", "Frozen Yogurt"] },
           ].map((section, idx) => (
             <Col xs={6} sm={3} md={2} key={idx} className="mb-3 mb-md-0">
-              <h6 className="fw-bold" style={{ fontSize: "16px" }}>{section.title}</h6>
+              <h4 className="fw-bold" style={{ fontSize: "18px" , paddingBottom:"10px" }}>{section.title}</h4>
               {section.items.map((item, i) => (
-                <p key={i} style={{ fontSize: "14px", marginTop: i === 0 ? "10px" : "0px" }}>{item}</p>
+                <p key={i} style={{ fontSize: "16px", marginTop: i === 0 ? "10px" : "0px" ,color: '#5c5c5c'}}>{item}</p>
               ))}
             </Col>
           ))}
         </Row>
 
         {/* Bottom Bar */}
-        <Row className="py-4 border-top" style={{ fontSize: "14px" }}>
+        <Row className="py-4 border-top" style={{ fontSize: "16px" ,color: '#5c5c5c'}}>
           <Col xs={12} md={4} className="text-center text-md-start mb-2 mb-md-0">
-            <p>© 2024 <strong>Lebagol</strong>. All Rights Reserved</p>
+            <p>© 2024 <strong style={{color:'#000',fontWeight:'500'}}>Lebagol</strong>. All Rights Reserved</p>
           </Col>
 
           <Col xs={12} md={4} className="text-center mb-2 mb-md-0">

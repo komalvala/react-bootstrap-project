@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 const MapSection = () => {
@@ -9,7 +8,7 @@ const MapSection = () => {
           <div
             style={{
               width: "100%",
-              height: "550px",
+              height: "600px",
               overflow: "hidden",
               borderBottom: "3px solid red",
             }}
